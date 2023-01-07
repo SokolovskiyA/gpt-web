@@ -1,6 +1,35 @@
 @use '../../styles/mixins' as *;
+@use '../../styles/colors' as *;
 
 .nav {
     @include flexRow;
     padding: 1rem;
+    &__log {
+        @include flexRow;
+        gap: 0;
+    }
+    &__button {
+        padding: 0.7rem;
+        background-color: transparent;
+        color: white;
+        border: 0;
+    }
+    &__highlight {
+        width: 6.25rem;
+        background-color: $ButtonColor;
+        border-radius: .3125rem;
+    }
+    &__highlight:hover {
+        background-color: $HoverColor;
+        transition: 1s;
+    }
+}
+.navigation {
+    @include flexRow;
+    gap: 2rem;
+    &__link:hover {
+        scale: 1.1;
+        transition: 1s;
+        text-decoration: underline;
+    }
 }

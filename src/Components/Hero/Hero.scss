@@ -1,0 +1,13 @@
+@use '../../styles/colors' as*;
+@use '../../styles/mixins' as*;
+
+.hero {
+    padding: 2rem;
+    @include flexRow;
+    &__img {
+        width: 50%;
+    }
+    &__header {
+        color: linear-gradient( to right, #AE67FA #F49867);
+    }
+}
