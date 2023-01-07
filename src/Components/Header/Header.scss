@@ -1,0 +1,6 @@
+@use '../../styles/mixins' as *;
+
+.nav {
+    @include flexRow;
+    padding: 1rem;
+}
