@@ -8,6 +8,7 @@ import drop from './assets/dropbox.png';
 import shopify from './assets/shopify.png';
 import { motion } from "framer-motion"
 import WhatIsGPT from './Components/WhatIsGPT/WhatIsGPT';
+import Features from './Components/Features/Features';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           )}
         </div>
         <WhatIsGPT />
+        <Features />
       </div>
     </div>
   );
