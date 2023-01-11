@@ -1,15 +1,16 @@
-import React from 'react'
-import './Features.scss'
-import { motion } from "framer-motion"
+import React from 'react';
+import './Features.scss';
+import { motion } from "framer-motion";
 
 function Features() {
     return (
         <div className='features'>
             <div className='features__header-div'>
-                <motion.h2 
-                animate={{ color: ["#AE67FA", "#F49867","#AE67FA"]}}
-                stransition={{ duration: 5, repeat: Infinity}}
-                className='features__header'>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</motion.h2>
+                <motion.h1 
+                    animate={{ color: ["#AE67FA", "#F49867","#AE67FA"]}}
+                    transition={{ duration: 5, repeat: Infinity}}
+                    className='features__header'>The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.
+                </motion.h1>
                 <p className='features__label'>Request Early Access to Get Started</p>
             </div>
             <div className='features__container'>
