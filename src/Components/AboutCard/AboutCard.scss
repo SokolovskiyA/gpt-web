@@ -1,0 +1,13 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.about__card {
+    margin-top: 4rem;
+    width: 31%;
+}
+.about__card-text {
+    color: $MainTextColor;
+    line-height: 1.875rem;
+    margin-top: 3rem;
+
+}

@@ -2,12 +2,58 @@
 @use '../../styles/mixins' as*;
 
 .hero {
-    padding: 2rem;
+    padding:1rem 2rem;
     @include flexRow;
     &__img {
         width: 50%;
     }
     &__header {
+        font-size: 3.875rem;
         color: linear-gradient( to right, #AE67FA #F49867);
+    }
+    &__text-div {
+        align-self: stretch;
+        padding: 3rem 0;
+        @include flexRow;
+        flex-wrap: wrap;
+        justify-content: left;
+        font-size: 1.25rem;
+        color: $MainTextColor;
+    }
+    &__form {
+        width: 100%;
+        padding: 0 1rem 0 0;
+    }
+    &__input{
+        font-size: 1.25rem;
+        padding: 1rem;
+        background-color: $FormBackground;
+        border:none;
+        border-radius: 5px 0 0 5px;
+        width:70%;
+        color: $MainTextColor;
+    }
+    &__input::placeholder {
+        color: #3D6184;
+    }
+    &__input:focus {
+        outline: none;
+    }
+    &__button {
+        color: white;
+        background-color: $ButtonColor;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        padding: 1rem;
+        font-size: 20px;
+        width: 30%;
+    }
+    &__button:hover {
+        background-color: $HoverColor;
+        transition: 1s;
+    }
+    &__signature {
+        color: white;
+        font-size: .75rem;
     }
 }

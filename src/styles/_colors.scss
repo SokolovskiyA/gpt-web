@@ -2,17 +2,21 @@ $ButtonColor: #FF4820;
 $HoverColor: #AE67FA;
 $HoverGradient: #F49867;
 $HeadGradient: linear-gradient(45deg, #AE67FA, #F49867);
+$MainTextColor: #81AFDD;
+$FormBackground: #052D56;
 
 
+@mixin whatisBackground {
+    background:-moz-radial-gradient(circle at 0% 0%, #1B78DE 0%, #092A4E 15%, #092A4E 79%, #1B78DE 100%);
+    background:-webkit-radial-gradient(circle at 0% 0%, #1B78DE 0%, #092A4E 15%, #092A4E 79%, #1B78DE 100%);
+    background:-o-radial-gradient(circle at 0% 0%, #1B78DE 0%, #092A4E 15%, #092A4E 79%, #1B78DE 100%);
+    background:-ms-radial-gradient(circle at 0% 0%, #1B78DE 0%, #092A4E 15%, #092A4E 79%, #1B78DE 100%);
+    background:radial-gradient(circle at 0% 0%, #1B78DE 0%, #092A4E 15%, #092A4E 79%, #1B78DE 100%);
+}
 @mixin mainBackground {
-    /* ff 3.6+ */
     background:-moz-radial-gradient(circle at 23% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-    /* safari 5.1+,chrome 10+ */
     background:-webkit-radial-gradient(circle at 23% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-    /* opera 11.10+ */
     background:-o-radial-gradient(circle at 23% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-    /* ie 10+ */
     background:-ms-radial-gradient(circle at 23% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-    /* global 92%+ browsers support */
     background:radial-gradient(circle at 23% 20%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 }

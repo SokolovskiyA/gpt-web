@@ -3,21 +3,24 @@
 
 .nav {
     @include flexRow;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
     &__log {
         @include flexRow;
-        gap: 0;
+        gap: 1rem;
     }
     &__button {
         padding: 0.7rem;
         background-color: transparent;
         color: white;
         border: 0;
+        font-size: 1.125rem;
     }
     &__highlight {
-        width: 6.25rem;
+        width: 9.375rem;
         background-color: $ButtonColor;
         border-radius: .3125rem;
+        padding: 1rem;
     }
     &__highlight:hover {
         background-color: $HoverColor;
@@ -26,7 +29,14 @@
 }
 .navigation {
     @include flexRow;
+ 
     gap: 2rem;
+    &__header {
+        font-size: 3rem;
+    }
+    &__link {
+        font-size: 1.125rem;
+    }
     &__link:hover {
         scale: 1.1;
         transition: 1s;

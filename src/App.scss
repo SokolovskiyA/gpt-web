@@ -1,18 +1,32 @@
 @use './styles/colors' as *;
-
+@use './styles/mixins' as *;
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    font-family: "Manrope";
 
+}
 a {
     text-decoration: none;
     color:white;
 }
-
 .main-div {
     font-family: manrope;
     @include mainBackground;
     color:white;
+    max-width: 1440px;
+    margin:auto;
+    padding: 2rem 4rem;
+    overflow:hidden;
+}
+.links {
+    background-color: inherit;
+    @include flexRow;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem;
+    &__image {
+        height: 1.5rem;
+    }
 }
