@@ -1,0 +1,23 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+.footer {
+    background-color: #031B34;
+    text-align: center;
+    padding: 2rem;
+    &__header {
+        width: 70%;
+        margin: 2rem auto;
+    }
+    &__link {
+        background-color: $ButtonColor;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 1rem 4rem;
+        border-radius: 1.25rem;
+    }
+    &__link:hover {
+        background-color: $HoverColor;
+        transition: 1s;
+    }
+}

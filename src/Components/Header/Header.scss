@@ -5,6 +5,7 @@
     @include flexRow;
     justify-content: space-between;
     padding: 1rem 2rem;
+    margin: 0 2rem;
     &__log {
         @include flexRow;
         gap: 1rem;
@@ -29,7 +30,6 @@
 }
 .navigation {
     @include flexRow;
- 
     gap: 2rem;
     &__header {
         font-size: 3rem;

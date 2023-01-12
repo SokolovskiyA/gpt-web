@@ -1,0 +1,35 @@
+@use '../../styles/colors' as *;
+@use '../../styles/mixins' as *;
+
+
+.hero2 {
+    display: flex;
+    margin: 2rem 4rem;
+    gap: 3rem;
+    justify-content: space-between;
+    &__banner {
+        width: 50%;
+    }
+    &__text-div {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 2rem;
+        margin-top: 4rem;
+    }
+    &__header {
+        font-size: 2.125rem;
+    }
+    &__text {
+        font-size: 1rem;
+        color: $MainTextColor;
+        line-height: 1.875rem;
+    }
+    &__link1 {
+        color: #71E5FF;
+    }
+    &__link2 {
+        color: $HoverGradient;
+    }
+}

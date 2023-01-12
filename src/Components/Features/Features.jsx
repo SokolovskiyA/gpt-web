@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Features() {
     return (
-        <div className='features'>
+        <div id="features" className='features'>
             <div className='features__header-div'>
                 <motion.h1 
                     animate={{ color: ["#AE67FA", "#F49867","#AE67FA"]}}

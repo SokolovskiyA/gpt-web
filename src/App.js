@@ -9,6 +9,11 @@ import shopify from './assets/shopify.png';
 import { motion } from "framer-motion"
 import WhatIsGPT from './Components/WhatIsGPT/WhatIsGPT';
 import Features from './Components/Features/Features';
+import Hero2 from './Components/Hero2/Hero2';
+import Banner from './Components/Banner/Banner';
+import Blogs from './Components/Blogs/Blogs';
+import Footer from './Components/Footer/Footer';
+
 
 
 function App() {
@@ -28,6 +33,10 @@ function App() {
         </div>
         <WhatIsGPT />
         <Features />
+        <Hero2 />
+        <Banner />
+        <Blogs />
+        <Footer />
       </div>
     </div>
   );

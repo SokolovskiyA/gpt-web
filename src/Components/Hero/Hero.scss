@@ -3,6 +3,7 @@
 
 .hero {
     padding:1rem 2rem;
+    margin: 0 2rem;
     @include flexRow;
     &__img {
         width: 50%;
